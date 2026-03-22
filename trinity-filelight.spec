@@ -44,9 +44,10 @@ BuildOption:    -DWITH_GCC_VISIBILITY=%{!?with_clang:ON}%{?with_clang:OFF}
 
 BuildRequires:	trinity-tdelibs-devel >= %{tde_version}
 BuildRequires:	trinity-tdebase-devel >= %{tde_version}
-BuildRequires:	desktop-file-utils
-
 BuildRequires:	trinity-tde-cmake >= %{tde_version}
+BuildRequires:  tqt3-dev-tools
+
+BuildRequires:	desktop-file-utils
 
 %{!?with_clang:BuildRequires:	gcc-c++}
 
